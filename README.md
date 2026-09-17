@@ -99,7 +99,7 @@ python kaggle/run_pipeline.py --user <your-kaggle-username> run
 ## Repository Layout
 
 ```
-Cattle_ReID/
+cattle-re-identification/
 ├── README.md                         # this file
 ├── LICENSE                           # MIT
 ├── requirements.txt                  # Python dependencies

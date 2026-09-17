@@ -5,10 +5,10 @@ echo "=== Setting up Cattle ReID training environment ==="
 
 # Clone repo
 cd ~
-if [ ! -d "Cattle_ReID" ]; then
-    git clone https://github.com/0xmudit/Cattle_ReID.git
+if [ ! -d "cattle-re-identification" ]; then
+    git clone https://github.com/0xmudit/cattle-re-identification.git
 fi
-cd Cattle_ReID
+cd cattle-re-identification
 
 # Install dependencies
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
@@ -23,6 +23,6 @@ mkdir -p Dataset
 
 echo "=== Setup complete! ==="
 echo "Next: Transfer videos with:"
-echo '  scp "C:\path\to\Dataset\*.mp4" techteam@100.67.41.64:~/Cattle_ReID/Dataset/'
+echo '  scp "C:\path\to\Dataset\*.mp4" techteam@100.67.41.64:~/cattle-re-identification/Dataset/'
 echo "Then run training:"
-echo "  cd ~/Cattle_ReID && jupyter nbconvert --to notebook --execute cattle_reid_colab_fixed.ipynb"
+echo "  cd ~/cattle-re-identification && jupyter nbconvert --to notebook --execute cattle_reid_colab_fixed.ipynb"
